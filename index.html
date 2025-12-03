@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightIQ - AI-Powered Business Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">InsightIQ</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#" id="openModalContact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button header-cta" id="openModalBtn">Get Started Free</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h2>Unlock <strong>Future Growth</strong>with AI-Driven Intelligence.</h2>
+                    <p>Go beyond surface-level data. InsightIQ uses advanced machine learning to provide actionable, predictive analytics that drive your business forward.</p>
+                    <button class="cta-button primary-cta" id="openModalBtn2">Start Your 14-Day Free Trial</button>
+                    <p class="trial-note">No credit card required. Instant setup.</p>
+                </div>
+                <div class="hero-image-placeholder">
+                    <img src="hero-image.png" alt="InsightIQ AI Analytics Dashboard with glowing brain icon" class="h-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="container">
+                <h3>Core Features That Deliver Results</h3>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <span class="icon">📈</span>
+                        <h4>Predictive Modeling</h4>
+                        <p>Forecast market trends and customer behavior with up to 95% accuracy.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="icon">⏱️</span>
+                        <h4>Real-time Data Streams</h4>
+                        <p>Access and analyze live data feeds instantly, making decisions on the spot.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="icon">🤖</span>
+                        <h4>Automated Reporting</h4>
+                        <p>Eliminate manual work. Generate comprehensive, shareable reports automatically.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h3>Trusted by Industry Leaders</h3>
+                <div class="testimonial-slider">
+                    <blockquote class="testimonial-slide active">
+                        "InsightIQ completely transformed our decision-making process. The predictive models are uncannily accurate and saved us thousands."
+                        <cite>- Jane Doe, CEO of TechCorp</cite>
+                    </blockquote>
+                    <blockquote class="testimonial-slide">
+                        "The automated reporting feature alone justifies the cost. Our team now spends 80% less time crunching numbers."
+                        <cite>- Mike Chen, Head of Analytics at Global Solutions</cite>
+                    </blockquote>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <h2>Simple, Transparent Pricing</h2>
+                <p class="pricing-subtext">Choose the plan that best fits your scale and ambition.</p>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h4>Starter</h4>
+                        <p class="price-tag">$49<span>/month</span></p>
+                        <ul>
+                            <li>✔️ 1 User License</li>
+                            <li>✔️ Core Analytics Dashboard</li>
+                            <li>✔️ 10,000 Data Events/Mo</li>
+                            <li>❌ Predictive Modeling</li>
+                            <li>❌ Dedicated Support</li>
+                        </ul>
+                        <button class="cta-button primary-cta" id="openModalBtnStarter">Choose Starter</button>
+                    </div>
+                    <div class="price-card featured-card">
+                        <h4>Business</h4>
+                        <p class="price-tag">$199<span>/month</span></p>
+                        <ul>
+                            <li>✔️ 5 User Licenses</li>
+                            <li>✔️ All Core Features</li>
+                            <li>✔️ Unlimited Data Events</li>
+                            <li>✔️ <strong>Predictive Modeling</strong></li>
+                            <li>✔️ Priority Email Support</li>
+                        </ul>
+                        <button class="cta-button primary-cta" id="openModalBtnBusiness">Start 14-Day Free Trial</button>
+                    </div>
+                    <div class="price-card">
+                        <h4>Enterprise</h4>
+                        <p class="price-tag">Custom</p>
+                        <ul>
+                            <li>✔️ Unlimited Users</li>
+                            <li>✔️ All Features + API Access</li>
+                            <li>✔️ Unlimited Data Events</li>
+                            <li>✔️ Custom ML Models</li>
+                            <li>✔️ 24/7 Dedicated Account Manager</li>
+                        </ul>
+                        <button class="cta-button primary-cta" id="openModalBtnEnterprise">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <p>&copy; 2025 InsightIQ. All rights reserved.</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="ctaModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modalTitle">Start Your Free Trial</h3> 
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Work Email" required>
+                <textarea id="modalMessage" placeholder="Tell us about your business or specific inquiry (Optional)"></textarea>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+            <small id="modalNote">No credit card required for trial. We'll be in touch!</small>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
